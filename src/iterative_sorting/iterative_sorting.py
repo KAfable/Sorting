@@ -35,7 +35,6 @@ def selection_sort(arr):
     return arr
 
 
-# TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     # set the outer loop, size of where numbers get bubbled
     for i in range(len(arr)-1, 0, -1):
@@ -46,7 +45,21 @@ def bubble_sort(arr):
                 temp = arr[j]
                 arr[j] = arr[j+1]
                 arr[j+1] = temp
+    return arr
 
+
+def bubble_sort2(arr):
+    swapped = True
+    while swapped:
+        swapped = False
+        # loop through the array, and if at least once swap happens, do it again
+        for i in range(0, len(arr)-1):
+            # if the element is larger, swap it to the right
+            if arr[i] > arr[i + 1]:
+                temp = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i+1] = temp
+                swapped = True
     return arr
 
 
