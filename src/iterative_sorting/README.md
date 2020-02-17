@@ -34,22 +34,18 @@ The answer to the question, "Is **_Insertion Sort_** an efficient algorithm?" is
 
 In **Bubble Sort**, we make a series of swaps between adjacent elements, gradually moving larger elements towards the end of the array (or _bubbling_ larger elements up).
 
-### Algorithm
+### Bubble Sort Implementation
 
 1. Loop through your array
    - Compare each element to its neighbor
    - If elements in wrong position (relative to each other, swap them)
 2. If no swaps performed, stop. Else, go back to the element at index 0 and repeat step 1.
 
-### Real-World Applications
+### Bubble Sort Applications
 
 **_Bubble Sort_** is not ideal for many real-world applications. If a small element that _should_ be at the beginning of our array is originally located near the end, it will take a long time to move it into its correct position.
 
 However, it should be noted that if you perform **Bubble Sort** on an array that's already sorted, it will only require a single pass through the array, making its best-case performance linear. It's also very simple to implement.
-
-### Your Task
-
-- Complete `bubble_sort()` in `iterative_sorting.py`.
 
 ## Selection Sort
 
@@ -61,7 +57,7 @@ An example of this algorithm being applied to an array with 10 numerical element
 
 [![(VIDEO) Select-sort with Gypsy folk dance](https://i.ytimg.com/vi/Ns4TPTC8whw/hqdefault.jpg)](https://www.youtube.com/watch?v=Ns4TPTC8whw)
 
-### Algorithm
+### Selection Sort Implementation
 
 1. Start with current index = 0
 
@@ -73,19 +69,9 @@ An example of this algorithm being applied to an array with 10 numerical element
    b. Swap the element at current index with the
    smallest element found in above loop
 
-### Real-World Applications
+### Selection Sort Application
 
-While **_Selection Sort_** is one of the easier sorting algorithms to understand and implement, it has one major drawback - its efficiency.
-
-Recall that the runtime complexity of an algorithm, often expressed using _Big O notation_, tells us how the amount of operations our algorithm requires will grow as the size of our input grows. **_Selection Sort_** has a runtime of O(n²), making it impractical to use with many large, real-world data sets.
-
-### Your Task
-
-- Complete the missing parts of `selection_sort()` in `iterative_sorting.py`.
-
-## TO-DO in iterative_sorting.py
-
-- Complete `selection_sort()` and `bubble_sort()`
+While **_Selection Sort_** is one of the easier sorting algorithms to understand and implement, it has one major drawback - its efficiency with an runtime of O(n²)
 
 ## Stretch Goals
 
