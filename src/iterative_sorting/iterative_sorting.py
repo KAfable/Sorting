@@ -12,6 +12,7 @@ def insertion_sort(arr):
             arr[j] = temp
             # keep track of the element as it moves down
             cur = j
+            # decrement j
             j = j - 1
 
     return arr
@@ -36,6 +37,15 @@ def selection_sort(arr):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
+    # set the outer loop, size of where numbers get bubbled
+    for i in range(len(arr)-1, 0, -1):
+        for j in range(0, i):
+            # check if the left is bigger than the right
+            if arr[j] > arr[j+1]:
+                # if yes, move it to the right
+                temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = temp
 
     return arr
 
