@@ -22,14 +22,12 @@ def merge(arrA, arrB):
 
 
 def merge_sort(arr):
-    """Sorting algorithm that is pretty rough that """
-    # make sure it's less than 2 instead of equal to 1, as some arrays are 0 length
+    """Sorting algorithm that recursively separates the original array into single elements, and then applies sorting logic as it recombines the arrays together. """
     if(len(arr) < 2):
         return arr
     middle = len(arr)//2
     arr1 = arr[0:middle]
     arr2 = arr[middle:]
-
     return merge(merge_sort(arr1), merge_sort(arr2))
 
 
